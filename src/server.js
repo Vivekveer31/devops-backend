@@ -5,6 +5,9 @@ const app = express();
 app.use(express.json());
 
 const filePath = "./tasks.json";
+app.get("/", (req, res) => {
+  res.send("<h1>hello from AWS</h1>");
+});
 
 // Read tasks
 app.get("/tasks", (req, res) => {
