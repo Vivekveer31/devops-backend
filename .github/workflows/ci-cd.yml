@@ -58,4 +58,4 @@ jobs:
         run: npm ci
 
       - name: Restart PM2 app
-        run: pm2 restart backend || pm2 start src/server.js
+        run: pm2 restart server
